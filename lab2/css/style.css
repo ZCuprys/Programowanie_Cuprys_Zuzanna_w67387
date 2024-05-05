@@ -1,0 +1,110 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 50px;
+}
+h4 {
+    font-size: 30px;
+}
+.wprowadzenie {
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+
+body > header {
+    position: sticky; 
+    background-color: lightgray;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 10px 2px #aaa;
+    padding: 20px 120px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+    align-items: center;
+    box-shadow: 0 2px 4px 2px grey;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-right: 16px;
+    gap: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+#index a{
+    color: lightgreen;
+}
+
+#name{
+    color: blue;
+    font-weight: bold;
+    padding-left: 16px;
+}
+
+article, section{
+    display: block;
+    padding: 0 120px;
+    font-size: 20px;
+}
+
+article{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 120px;
+}
+
+#meetme{
+    display: flex; 
+    flex-direction: row; 
+    width: 80%;
+    align-items: center;
+}
+
+#meetme > img{
+    width: 200px;
+    height: 200px;
+}
+
+table{
+    border: 5px solid;
+    width: 500px;
+}
+
+td, th{
+    border: 5px solid;
+}
+
+#tab1{
+    width: 500px;
+    height: 500px;
+}
+
+.article-element{
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+}
