@@ -1,0 +1,16 @@
+.row {
+    margin: 2% 1%;
+}
+
+.imie {
+    margin-block-start: 1%;
+}
+
+.nazwisko {
+    margin-block-start: 1%;
+    margin-block-end: 1%;
+}
+
+p{
+    color: red;
+}
