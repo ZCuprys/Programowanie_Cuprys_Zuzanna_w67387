@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Lab_6</title>
+</head>
+<body>
+    <header>
+    <h1>Laboratorium 6</h1>
+    </header>
+
+    <main>
+
+        <form id="MyForm" onsubmit="return false">
+
+                <fieldset>
+                    <legend>Podaj dane: </legend>
+                    <div class="imie">
+                        <label>Imię* <input id="imie" type="text" name="imie"></label>
+                    </div>
+                    <p id="imie_valid"></p>
+
+                    <div class="nazwisko">
+                        <label>Nazwisko* <input id="nazwisko" type="text" name="nazwisko"></label>
+                    </div>
+                    <p id="nazwisko_valid"></p>
+
+                </fieldset>
+
+            <div class="row">
+
+                <fieldset>
+                    <legend>Wybierz płeć:</legend>
+
+                    <div>
+                        <label><input id="k" type="radio" value="kobieta" name="plec">Kobieta</label>
+                    </div>
+                    <div>
+                        <label><input id="m" type="radio" value="mężczyzna" name="plec">Mężczyzna</label>
+                    </div>
+                    <div>
+                        <label><input id="brak" type="radio" value="inne" name="plec">Nie chcę podawać</label>
+                    </div>
+                    <p id="plec_valid"></p>
+
+                </fieldset> 
+
+            </div>
+
+            <div class="row">
+                <label>Podaj Email:* <input id="email" type="email" name="email" placeholder="np. twojmail@gmail.com" required></label>
+            </div>
+            <p id="email_valid"></p>
+
+            <div id="email-error" class="error-message"></div>
+
+            <div class="row">
+                <label>Podaj numer telefonu:* <input id="telefon" type="text" onkeydown="validateNumber(event);" name="telefon" placeholder="np. 123456789" minlength="9" maxlength="9" required></label>
+            </div>
+            <p id="telefon_valid"></p>
+
+            <div class="row">
+                <label>Podaj datę urodzin: <input id="data" type="date" name="urodziny" max="2024-05-25"></label>
+            </div>
+            <p id="data_valid"></p>
+
+            <div class="row">
+                <label for="kraj">Wybierz kraj: </label>
+                <select id="kraj">
+
+                  <option selected value="Polska">Polska</option>
+                  <option value="Francja">Francja</option>
+                  <option value="Niemcy">Niemcy</option>
+                  <option value="Czechy">Czechy</option>
+                  <option value="Słowacja">Słowacja</option>
+                  
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Podaj hasło: <input type="password" id="haslo" name="haslo" minlength="8" required></label>
+            </div>
+            <p id="haslo_valid"></p>
+
+            <div class="row">
+                <label>Powtórz hasło: <input type="password" id="haslo2" name="haslo2" minlength="8" required></label>
+            </div>
+            <p id="haslo2_valid"></p>
+
+            <div class="row">
+                <label><input id="button" type="submit" onclick="CzyWartosc()" value="Wyslij"></label>
+            </div>
+
+        </form>
+
+    </main>  
+
+</body>
+</html>
